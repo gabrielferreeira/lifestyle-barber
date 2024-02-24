@@ -48,3 +48,23 @@ section#perguntas .titulo::after {
   background-color: var(--darkThree);
   border-top: 1px solid var(--gray);
 }
+
+.perguntas-frequentes details {
+  transition: max-height 0.3s ease;
+}
+
+.perguntas-frequentes details[open] {
+  max-height: 100vh;
+}
+
+.perguntas-frequentes summary i {
+  transition: transform 0.3s ease;
+}
+
+.perguntas-frequentes details[open] summary i {
+  transform: rotate(180deg);
+}
+
+.rotate {
+  transform: rotate(360deg);
+}
