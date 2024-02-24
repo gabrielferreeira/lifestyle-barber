@@ -1,5 +1,5 @@
 section#contato {
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 .localizacao {
@@ -149,4 +149,22 @@ section#contato {
   font-size: 0.8rem;
   font-weight: 400;
   color: var(--white);
+}
+
+@media screen and (max-width: 790px) {
+  .contatos {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .contatos .mapa-do-site,
+  .contatos .outros-contato,
+  .contatos .sociais {
+    height: auto;
+  }
+
+  .noticias {
+    margin-top: 2.5rem;
+  }
 }

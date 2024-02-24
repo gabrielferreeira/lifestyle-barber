@@ -44,3 +44,12 @@ body {
   background: #262626;
   margin: 1rem auto 0 auto;
 }
+
+.efeito1,
+.efeito2,
+.efeito3,
+.efeito-left,
+.efeito-right,
+.efeito-banner {
+  visibility: hidden;
+}
