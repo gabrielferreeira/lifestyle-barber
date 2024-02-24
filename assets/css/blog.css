@@ -1,0 +1,51 @@
+section#blog {
+  padding: 2rem 0;
+}
+
+.blog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.blog .blog-itens .blog-img figure img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.blog .blog-itens .blog-img figcaption {
+  display: flex;
+  justify-content: right;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--darkTwo);
+}
+
+.blog .blog-itens .blog-conteudo {
+  margin-top: 1rem;
+  padding: 0 8px;
+}
+
+.blog .blog-itens .blog-conteudo h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--darkOne);
+  text-align: center;
+}
+
+.blog .blog-itens .blog-conteudo p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--darkOne);
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
+.blog .blog-itens .blog-conteudo blockquote {
+  font-size: 0.6rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--grayTwo);
+  margin-top: 1rem;
+}

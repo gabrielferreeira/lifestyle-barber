@@ -1,0 +1,50 @@
+section#perguntas {
+  background-color: var(--darkOne);
+  padding: 2rem 0;
+}
+
+section#perguntas .titulo {
+  color: var(--white);
+}
+
+section#perguntas .titulo::after {
+  background: var(--white);
+}
+
+.perguntas-frequentes {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.perguntas-frequentes details summary {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  background-color: var(--darkTwo);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.perguntas-frequentes details summary h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.perguntas-frequentes details summary i {
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+.perguntas-frequentes details p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--gray);
+  padding: 10px;
+  background-color: var(--darkThree);
+  border-top: 1px solid var(--gray);
+}

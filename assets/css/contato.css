@@ -1,0 +1,152 @@
+section#contato {
+  padding: 2rem 0;
+}
+
+.localizacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.contatos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.contatos .mapa-do-site,
+.contatos .outros-contato,
+.contatos .sociais {
+  height: 190px;
+}
+
+.contatos .mapa-do-site h3,
+.contatos .outros-contato h3,
+.contatos .sociais h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--darkOne);
+}
+
+.contatos .mapa-do-site ul,
+.contatos .outros-contato ul,
+.contatos .sociais ul {
+  list-style-type: none;
+}
+
+.contatos .mapa-do-site ul li,
+.contatos .outros-contato ul li {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.contatos .mapa-do-site ul li,
+.contatos .sociais ul li {
+  cursor: pointer;
+}
+
+.contatos .mapa-do-site ul li a,
+.contatos .sociais ul li a {
+  color: var(--darkOne);
+  text-decoration: none;
+}
+
+.contatos .outros-contato ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contatos .mapa-do-site ul li a {
+  transition: all 0.3s ease-in-out;
+}
+
+.contatos .mapa-do-site ul li a:hover {
+  color: var(--grayTwo);
+  text-decoration: underline;
+}
+
+.contatos .sociais ul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+.contatos .sociais ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.contatos .sociais ul li:hover {
+  background-color: var(--gray);
+}
+
+.noticias {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.noticias form {
+  display: flex;
+  align-items: center;
+}
+
+.noticias form input {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  border: none;
+  outline: none;
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: var(--darkOne);
+  border-radius: 6px 0 0 6px;
+}
+
+.noticias form input::placeholder {
+  color: var(--grayTwo);
+}
+
+.noticias form button {
+  width: 60px;
+  height: 40px;
+  padding: 6px;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 0 6px 6px 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--darkOne);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.noticias form button:hover {
+  background-color: var(--gray);
+}
+
+.copy {
+  background-color: var(--darkOne);
+  padding: 20px;
+  text-align: center;
+}
+
+.copy p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--white);
+}
