@@ -1,6 +1,6 @@
 section#perguntas {
   background-color: var(--darkOne);
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 
 section#perguntas .titulo {
@@ -23,7 +23,7 @@ section#perguntas .titulo::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 8px;
+  margin-top: 12px;
   background-color: var(--darkTwo);
   padding: 10px;
   cursor: pointer;
@@ -50,6 +50,7 @@ section#perguntas .titulo::after {
 }
 
 .perguntas-frequentes details {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: max-height 0.3s ease;
 }
 
