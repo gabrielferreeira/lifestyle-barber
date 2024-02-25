@@ -18,13 +18,19 @@ section#perguntas .titulo::after {
   margin-top: 2rem;
 }
 
+.perguntas-frequentes details {
+  background-color: var(--darkTwo);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: max-height 0.3s ease;
+}
+
 .perguntas-frequentes details summary {
   all: unset;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 12px;
-  background-color: var(--darkTwo);
+  margin-top: 13px;
   padding: 10px;
   cursor: pointer;
 }
@@ -49,17 +55,17 @@ section#perguntas .titulo::after {
   border-top: 1px solid var(--gray);
 }
 
-.perguntas-frequentes details {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  transition: max-height 0.3s ease;
-}
-
 .perguntas-frequentes details[open] {
   max-height: 100vh;
 }
 
 .perguntas-frequentes summary i {
   transition: transform 0.3s ease;
+}
+
+.perguntas-frequentes details[open] summary {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .perguntas-frequentes details[open] summary i {

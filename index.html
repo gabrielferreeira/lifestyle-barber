@@ -43,11 +43,11 @@
     <title>LifeStyle Barber</title>
   </head>
   <body>
-    <div class="overlay" id="overlay"></div>
+    <div class="overlay" id="overlay" aria-hidden="true"></div>
     <header id="header">
       <div class="conteiner">
         <nav class="desktop menu">
-          <a href="index.html" class="logo">
+          <a href="index.html" class="logo" aria-label="Logo LifeStyle">
             <figure>
               <img
                 src="assets/imagens/logo.png"
@@ -59,22 +59,22 @@
 
           <ul class="lista-desktop">
             <li class="item-desktop">
-              <a href="index.html">Início</a>
+              <a href="index.html" aria-label="Início">Início</a>
             </li>
             <li class="item-desktop">
-              <a href="#servicos">Serviços</a>
+              <a href="#servicos" aria-label="Serviços">Serviços</a>
             </li>
             <li class="item-desktop">
-              <a href="#sobre">Sobre</a>
+              <a href="#sobre" aria-label="Sobre">Sobre</a>
             </li>
             <li class="item-desktop">
-              <a href="#blog">Blog</a>
+              <a href="#blog" aria-label="Blog">Blog</a>
             </li>
             <li class="item-desktop">
-              <a href="#perguntas">Ajuda</a>
+              <a href="#perguntas" aria-label="Ajuda">Ajuda</a>
             </li>
             <li class="item-desktop">
-              <a href="#contato">Contato</a>
+              <a href="#contato" aria-label="Contato">Contato</a>
             </li>
           </ul>
 
@@ -83,11 +83,17 @@
             class="btn-desktop"
             title="Agendar horário"
             target="_blank"
+            role="button"
+            aria-label="Agendar horário"
           >
             Agendar horário
           </a>
-          <button class="icone-mobile" onclick="abrirMenu()">
-            <span>Menu</span>
+          <button
+            class="icone-mobile"
+            onclick="abrirMenu()"
+            aria-labelledby="abrir-menu"
+          >
+            <span id="abrir-menu" aria-hidden="true">Menu</span>
             <i class="bi bi-list"></i>
           </button>
         </nav>
@@ -95,29 +101,33 @@
     </header>
     <header class="menu-mobile" id="menu-mobile">
       <nav class="mobile menu">
-        <button class="icone-mobile" onclick="fecharMenu()">
-          <span>Fechar</span>
+        <button
+          class="icone-mobile"
+          onclick="fecharMenu()"
+          aria-labelledby="fechar-menu"
+        >
+          <span id="fechar-menu" aria-hidden="true">Fechar</span>
           <i class="bi bi-x-lg"></i>
         </button>
 
         <ul class="lista-mobile">
           <li class="item-mobile">
-            <a href="index.html">Início</a>
+            <a href="index.html" aria-label="Início">Início</a>
           </li>
           <li class="item-mobile">
-            <a href="#servicos">Serviços</a>
+            <a href="#servicos" aria-label="Serviços">Serviços</a>
           </li>
           <li class="item-mobile">
-            <a href="#sobre">Sobre</a>
+            <a href="#sobre" aria-label="Sobre">Sobre</a>
           </li>
           <li class="item-mobile">
-            <a href="#blog">Blog</a>
+            <a href="#blog" aria-label="Blog">Blog</a>
           </li>
           <li class="item-mobile">
-            <a href="#perguntas">Ajuda</a>
+            <a href="#perguntas" aria-label="Ajuda">Ajuda</a>
           </li>
           <li class="item-mobile">
-            <a href="#contato">Contato</a>
+            <a href="#contato" aria-label="Contato">Contato</a>
           </li>
         </ul>
 
@@ -126,6 +136,8 @@
           class="btn-mobile"
           target="_blank"
           title="Agendar horário"
+          role="button"
+          aria-label="Agendar horário"
         >
           Agendar horário
         </a>
@@ -145,7 +157,13 @@
               elegância e qualidade, onde os clientes podem relaxar e se sentir
               bem-cuidados.
             </p>
-            <a href="#sobre" class="saiba-mais">Saiba mais</a>
+            <a
+              href="#sobre"
+              class="saiba-mais"
+              role="button"
+              aria-label="Saiba mais"
+              >Saiba mais</a
+            >
           </div>
         </div>
       </section>
@@ -355,13 +373,17 @@
 
           <div class="perguntas-frequentes efeito1">
             <details open>
-              <summary>
+              <summary
+                id="pergunta1"
+                aria-expanded="true"
+                aria-controls="resposta1"
+              >
                 <h3>
                   Quais serviços a Lifestyle Barber oferece para seus clientes?
                 </h3>
                 <i class="bi bi-chevron-down"></i>
               </summary>
-              <p>
+              <p id="resposta1" aria-labelledby="pergunta1" aria-hidden="true">
                 A Lifestyle Barber oferece uma ampla gama de serviços de
                 barbearia, incluindo cortes de cabelo modernos, barbas
                 estilizadas e tratamentos de cabelo.
@@ -369,14 +391,18 @@
             </details>
 
             <details>
-              <summary>
+              <summary
+                id="pergunta2"
+                aria-expanded="false"
+                aria-controls="resposta2"
+              >
                 <h3>
                   Qual é a abordagem única da Lifestyle Barber em relação aos
                   serviços de barbearia?
                 </h3>
                 <i class="bi bi-chevron-down"></i>
               </summary>
-              <p>
+              <p id="resposta2" aria-labelledby="pergunta2" aria-hidden="true">
                 A Lifestyle Barber se destaca ao oferecer uma experiência de
                 barbearia premium, combinando técnicas tradicionais de barbearia
                 com estilos modernos e um ambiente descontraído e acolhedor.
@@ -384,14 +410,18 @@
             </details>
 
             <details>
-              <summary>
+              <summary
+                id="pergunta3"
+                aria-expanded="false"
+                aria-controls="resposta3"
+              >
                 <h3>
                   Como a Lifestyle Barber garante a satisfação do cliente em
                   seus serviços?
                 </h3>
                 <i class="bi bi-chevron-down"></i>
               </summary>
-              <p>
+              <p id="resposta3" aria-labelledby="pergunta3" aria-hidden="true">
                 A Lifestyle Barber se dedica a entender as necessidades e
                 preferências individuais de cada cliente, proporcionando
                 consultas personalizadas e garantindo resultados excepcionais em
@@ -400,7 +430,11 @@
             </details>
 
             <details>
-              <summary>
+              <summary
+                id="pergunta4"
+                aria-expanded="false"
+                aria-controls="resposta4"
+              >
                 <h3>
                   Quais são os diferenciais dos serviços de barbearia da
                   Lifestyle Barber em comparação com outras barbearias na
@@ -408,7 +442,7 @@
                 </h3>
                 <i class="bi bi-chevron-down"></i>
               </summary>
-              <p>
+              <p id="resposta4" aria-labelledby="pergunta4" aria-hidden="true">
                 A Lifestyle Barber se destaca pela sua equipe altamente
                 qualificada, uso de produtos premium, atendimento personalizado
                 e ambiente moderno, tornando-se a escolha ideal para aqueles que
@@ -443,42 +477,42 @@
 
               <ul>
                 <li>
-                  <a href="#servicos">Serviços</a>
+                  <a href="#servicos" aria-label="Serviços">Serviços</a>
                 </li>
 
                 <li>
-                  <a href="#sobre">Sobre</a>
+                  <a href="#sobre" aria-label="Sobre">Sobre</a>
                 </li>
 
                 <li>
-                  <a href="#blog">Blog</a>
+                  <a href="#blog" aria-label="Blog">Blog</a>
                 </li>
 
                 <li>
-                  <a href="#perguntas">Ajuda</a>
+                  <a href="#perguntas" aria-label="Ajuda">Ajuda</a>
                 </li>
 
                 <li>
-                  <a href="#contato">Contato</a>
+                  <a href="#contato" aria-label="Contato">Contato</a>
                 </li>
               </ul>
             </div>
 
             <div class="outros-contato efeito efeito2">
-              <h3>Outros contatos</h3>
+              <h3>Atendimento</h3>
 
               <ul>
-                <li>
+                <li aria-label="Telefone 1">
                   <i class="bi bi-telephone-plus"></i>
                   (99)9 9999-9999
                 </li>
 
-                <li>
+                <li aria-label="Telefone 2">
                   <i class="bi bi-telephone-plus"></i>
                   (99)9 8888-8888
                 </li>
 
-                <li>
+                <li aria-label="E-mail">
                   <i class="bi bi-envelope-plus"></i>
                   lifestylebarber@lifestylebarber.com.br
                 </li>
@@ -486,29 +520,53 @@
             </div>
 
             <div class="sociais efeito-right">
-              <h3>Sigam-nos</h3>
+              <h3>Siga-nos</h3>
 
               <ul>
                 <li>
-                  <a href="#" target="_blank" title="Instagram">
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="Instagram"
+                    role="button"
+                    aria-label="Instagram"
+                  >
                     <i class="bi bi-instagram"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" target="_blank" title="Facebook">
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="Facebook"
+                    role="button"
+                    aria-label="Facebook"
+                  >
                     <i class="bi bi-meta"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" target="_blank" title="Twitter">
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="Twitter"
+                    role="button"
+                    aria-label="Twitter"
+                  >
                     <i class="bi bi-twitter-x"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" target="_blank" title="YouTube">
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="YouTube"
+                    role="button"
+                    aria-label="YouTube"
+                  >
                     <i class="bi bi-youtube"></i>
                   </a>
                 </li>
@@ -523,9 +581,16 @@
                 name="email"
                 id="email"
                 placeholder="Fique por dentro das noticías..."
+                aria-label="Digite seu e-mail"
                 required
               />
-              <button type="submit">Enviar</button>
+              <button
+                type="submit"
+                aria-label="Inscrever-se"
+                aria-description="Inscrever-se para ficar por dentro de todas as novidades"
+              >
+                Enviar
+              </button>
             </form>
           </div>
         </div>
@@ -543,6 +608,8 @@
       href="https://api.whatsapp.com/send?phone=5500900000000&text=Ol%C3%A1,%20LifeStyle%20Barber!%20gostaria%20de%20realizar%20um%20agendamentos%20com%20voc%C3%AAs."
       target="_blank"
       title="Entre em contato com um de nossos atendentes"
+      role="button"
+      aria-label="WhatsApp"
     >
       <i class="bi bi-whatsapp"></i>
     </a>
