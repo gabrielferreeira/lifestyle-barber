@@ -35,23 +35,21 @@ section#blog {
 }
 
 .blog .blog-itens .blog-conteudo {
-  margin-top: 1rem;
-  padding: 0 8px 5px 8px;
+  margin-top: 0.8rem;
+  padding: 5px 6px;
 }
 
 .blog .blog-itens .blog-conteudo h3 {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--darkOne);
-  text-align: center;
 }
 
 .blog .blog-itens .blog-conteudo p {
   font-size: 1rem;
   font-weight: 400;
   color: var(--darkOne);
-  text-align: center;
-  margin-top: 0.8rem;
+  margin-top: 0.5rem;
 }
 
 .blog .blog-itens .blog-conteudo blockquote {
@@ -59,5 +57,5 @@ section#blog {
   font-weight: 400;
   font-style: italic;
   color: var(--grayTwo);
-  margin-top: 1rem;
+  margin-top: 12px;
 }
