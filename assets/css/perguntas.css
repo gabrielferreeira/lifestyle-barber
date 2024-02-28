@@ -16,62 +16,67 @@ section#perguntas .titulo::after {
   max-width: 750px;
   margin: 0 auto;
   margin-top: 2rem;
+  list-style-type: none;
 }
 
-.perguntas-frequentes details {
-  background-color: var(--darkTwo);
+.perguntas-frequentes .pergunta-item {
+  margin-top: 12px;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  transition: max-height 0.3s ease;
+  overflow: hidden;
 }
 
-.perguntas-frequentes details summary {
-  all: unset;
+.perguntas-frequentes .pergunta-item .pergunta {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 13px;
+  background-color: var(--darkTwo);
   padding: 10px;
   cursor: pointer;
 }
 
-.perguntas-frequentes details summary h3 {
+.perguntas-frequentes .pergunta-item .pergunta h3 {
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--white);
 }
 
-.perguntas-frequentes details summary i {
+.perguntas-frequentes .pergunta-item .pergunta i {
   font-size: 1.2rem;
   color: var(--white);
+  transition: transform 0.3s ease-in-out;
 }
 
-.perguntas-frequentes details p {
+.perguntas-frequentes .pergunta-item .resposta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.perguntas-frequentes .pergunta-item .resposta p {
   font-size: 1rem;
   font-weight: 300;
-  color: var(--gray);
+  color: var(--white);
   padding: 10px;
-  background-color: var(--darkThree);
-  border-top: 1px solid var(--gray);
 }
 
-.perguntas-frequentes details[open] {
-  max-height: 100vh;
+.perguntas-frequentes .pergunta-item.active .resposta {
+  max-height: 1000px;
+  animation: animate 1s ease-in-out;
 }
 
-.perguntas-frequentes summary i {
-  transition: transform 0.3s ease;
-}
-
-.perguntas-frequentes details[open] summary {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.perguntas-frequentes details[open] summary i {
+.perguntas-frequentes .pergunta-item .pergunta i.active {
   transform: rotate(180deg);
 }
 
-.rotate {
-  transform: rotate(360deg);
+@keyframes animate {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }

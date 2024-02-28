@@ -10,25 +10,10 @@
   border-radius: 50%;
   background-color: var(--green);
   box-shadow: rgba(255, 255, 255, 0.5) 0px 5px 15px;
-  animation: animate 2000ms infinite;
   cursor: pointer;
 }
 
 .whatsApp i {
   font-size: 1.7rem;
   color: var(--white);
-}
-
-@keyframes animate {
-  0% {
-    scale: 0.9;
-  }
-
-  50% {
-    scale: 1.1;
-  }
-
-  100% {
-    scale: 0.9;
-  }
 }

@@ -1,24 +1,30 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const summaries = document.querySelectorAll(".perguntas-frequentes summary");
+const perguntaItem = document.querySelectorAll(".pergunta-item");
 
-  summaries.forEach((summary) => {
-    summary.addEventListener("click", function () {
-      const icon = this.querySelector("i");
-      if (icon) {
-        icon.classList.toggle("rotate");
-      }
-    });
+function fecharRespostas() {
+  perguntaItem.forEach((item) => {
+    item.classList.remove("active");
+    const resposta = item.querySelector(".resposta");
+    resposta.classList.remove("active");
+    const icon = item.querySelector(".pergunta i");
+    icon.classList.remove("active");
   });
+}
 
-  const details = document.querySelectorAll(".perguntas-frequentes details");
+perguntaItem.forEach((item) => {
+  const pergunta = item.querySelector(".pergunta");
+  const resposta = item.querySelector(".resposta");
+  const icon = pergunta.querySelector("i");
 
-  details.forEach((detail) => {
-    detail.addEventListener("click", function () {
-      details.forEach((otherDetail) => {
-        if (otherDetail !== detail && otherDetail.open) {
-          otherDetail.open = false;
-        }
-      });
-    });
+  pergunta.addEventListener("click", () => {
+    if (!item.classList.contains("active")) {
+      fecharRespostas();
+      item.classList.add("active");
+      resposta.classList.add("active");
+      icon.classList.add("active");
+    } else {
+      item.classList.remove("active");
+      resposta.classList.remove("active");
+      icon.classList.remove("active");
+    }
   });
 });
